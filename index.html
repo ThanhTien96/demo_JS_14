@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo JS</title>
+
+    <link rel="stylesheet" href="./vendor/Bootstrap/bootstrap.min.css">
+</head>
+<body>
+    
+
+
+    <section class="my-5">
+      <div class="container">
+        <div class="d-flex align-items-start">
+          <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" >
+            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#baiTap1" type="button" role="tab">Bài Tập 1</button>
+            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#baiTap2" type="button" role="tab">Bài Tập 2</button>
+            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#baiTap3" type="button" role="tab">Bài Tập 3</button>
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#baiTap4" type="button" role="tab">Bài Tập 4</button>
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#baiTap5" type="button" role="tab">Bài Tập 5</button>
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#baiTap6" type="button" role="tab">Bài Tập 6</button>
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#baiTap7" type="button" role="tab">Bài Tập 7</button>
+          </div>
+          <div class="tab-content w-90" id="v-pills-tabContent">
+            <div class="tab-pane fade show active ms-5" id="baiTap1" role="tabpanel">
+             
+              <div class="bai1__content mt-5 text-center">
+                <div class="bai1__item">
+                  <h5>Nhập Vào 3 Số Nguyên</h5>
+                </div>
+                <div class="form-group mt-5">
+                  <input id="number1" type="text">
+                  <input id="number2" type="text" class="ms-3">
+                  <input id="number3" type="text" class="ms-3">
+                </div>
+                <div class="bai1__button mt-4">
+                  <button id="btn_number" class="btn btn-success">Sắp Xếp</button>
+                </div>
+              </div>
+              <h4 class="alert alert-success mt-3">Thứ Tự: <span id="numResult">1 < 2 < 3 </span></h4>
+            </div>
+            <div class="tab-pane fade ms-5" id="baiTap2" role="tabpanel">
+              
+              <div class="bai2__content mt-5 text-center">
+                <div class="bai2__item">
+                  <h5>Chọn Thành Viên</h5>
+                </div>
+                <div class="bai2__content">
+                  <div class="input-group my-3">
+                    <select class="form-select" id="wellcome">
+                      <option value="B" selected>Bố</option>
+                      <option value="M">Mẹ</option>
+                      <option value="A">Anh Trai</option>
+                      <option value="E">Em Gái</option>
+                    </select>
+                    
+                  </div>
+                  <div class="bai1__button mt-4">
+                    <button id="sayHi" class="btn btn-success">Gửi Lời Chào</button>
+                  </div>
+                </div>
+                <h6 id="wellcomeResult" class="alert alert-success mt-3"></h6>
+              </div>
+              
+            </div>
+            <div class="tab-pane fade ms-5" id="baiTap3" role="tabpanel">
+              
+              <div class="bai1__content mt-5 text-center">
+                <div class="bai1__item">
+                  <h5>Nhập Vào 3 Số Nguyên</h5>
+                </div>
+                <div class="form-group mt-5">
+                  <input id="isNum1" type="text" placeholder="nhập số thứ 1">
+                  <input id="isNum2" type="text" class="ms-3" placeholder="nhập số thứ 2">
+                  <input id="isNum3" type="text" class="ms-3" placeholder="nhập số thứ 3">
+                </div>
+                <div class="bai1__button mt-4">
+                  <button id="btnChanLe" class="btn btn-success">Kiểm Tra</button>
+                </div>
+              </div>
+              <h6 id="chanLeSo" class="alert alert-success mt-3 w-50 m-auto"></h6>
+            </div>
+            <div class="tab-pane fade ms-5" id="baiTap4" role="tabpanel">
+              
+              <div class="bai1__content mt-5 text-center">
+                <div class="bai1__item">
+                  <h5>Nhập Vào 3 cạnh của tam giác</h5>
+                </div>
+                <div class="form-group mt-5">
+                  <input id="canhA" type="text" placeholder="nhập vào 1 số..">
+                  <input id="canhB" type="text" class="ms-3" placeholder="nhập vào 1 số..">
+                  <input id="canhC" type="text" class="ms-3" placeholder="nhập vào 1 số..">
+                </div>
+                <div class="bai1__button mt-4">
+                  <button id="btnTamGiac" class="btn btn-success">Dự Đoán</button>
+                </div>
+              </div>
+              <h6 id="tamGiac" class="alert alert-success mt-3">Loại Tam Giác</h6>
+            </div>
+            <div class="tab-pane fade ms-5" id="baiTap5" role="tabpanel">
+              
+              <div class="bai1__content mt-5 text-center">
+                <div class="bai1__item">
+                  <h5>Tính ngày tháng năm</h5>
+                </div>
+                <div class="form-group mt-5">
+                  <input id="day" type="number" placeholder="ngày...">
+                  <input id="month" type="number" class="ms-3" placeholder="tháng...">
+                  <input id="year" type="number" class="ms-3" placeholder="năm...">
+                </div>
+                <div class="bai1__button mt-4">
+                  <button id="btnDate" class="btn btn-success">Ngày Hôm Qua</button>
+                  <button id="btnTomorow" class="btn btn-success ms-3">Ngày Mai</button>
+                </div>
+              </div>
+              <h6 id="hiendate" class="alert alert-success mt-3">....</h6>
+            </div>
+
+            <div class="tab-pane fade ms-5" id="baiTap6" role="tabpanel">
+              
+              <div class="bai1__content mt-5 text-center">
+                <div class="bai1__item">
+                  <h5>Nhập Vào 3 cạnh của tam giác</h5>
+                </div>
+                <div class="form-group mt-5">
+                  <input id="" type="text" placeholder="nhập vào 1 số..">
+                  <input id="" type="text" class="ms-3" placeholder="nhập vào 1 số..">
+                  <input id="" type="text" class="ms-3" placeholder="nhập vào 1 số..">
+                </div>
+                <div class="bai1__button mt-4">
+                  <button id="" class="btn btn-success">Dự Đoán</button>
+                </div>
+              </div>
+              <h6 id="" class="alert alert-success mt-3">Loại Tam Giác</h6>
+            </div>
+
+            <div class="tab-pane fade ms-5" id="baiTap7" role="tabpanel">
+              
+              <div class="bai1__content mt-5 text-center">
+                <div class="bai1__item">
+                  <h5>Nhập Vào 3 cạnh của tam giác</h5>
+                </div>
+                <div class="form-group mt-5">
+                  <input id="" type="text" placeholder="nhập vào 1 số..">
+                  <input id="" type="text" class="ms-3" placeholder="nhập vào 1 số..">
+                  <input id="" type="text" class="ms-3" placeholder="nhập vào 1 số..">
+                </div>
+                <div class="bai1__button mt-4">
+                  <button id="" class="btn btn-success">Dự Đoán</button>
+                </div>
+              </div>
+              <h6 id="" class="alert alert-success mt-3">Loại Tam Giác</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./vendor/jquery/jquery.min.js"></script>
+    <script src="./vendor/Bootstrap/bootstrap.min.js"></script>
+    <script src="./js/morde.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
